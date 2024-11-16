@@ -38,7 +38,7 @@
 
   <!-- Navbar -->
   <header class="sticky top-0 z-50 shadow-lg opacity-80">
-    <nav class="bg-colorOne py-5 flex justify-between items-center px-6 w-11/12 mx-auto">
+    <nav class="bg-colorOne py-5 flex  justify-between items-center px-6  lg:w-11/12 md:w-full mx-auto">
       <!-- left blog button  -->
       <div class="flex items-center ">
         <button><a href="blog.html" class="text-gray-700 font-bold bg-colorTwo text-xl rounded-md px-5 py-2">Blog</a></button>
@@ -81,11 +81,12 @@
   <main id="cards">
     <!-- Donation cards  -->
     <section class="w-11/12 py-3 mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-1 md:grid-cols-2  gap-10 p-6">
+      <div class="grid  lg:grid-cols-1 md:grid-cols-2  gap-10 p-6">
 <!-- Donation for Noakhali  -->
-        <div class="bg-white rounded-lg shadow-md space-x-4 flex gap-5">
-          <img src="./assets/noakhali.png" alt="" class="w-full">
-
+        <div class="bg-white  rounded-lg shadow-md space-x-4 grid grid-cols md:grid-cols-2 gap-5 
+        ">
+          <div  class="w-full"><img src="./assets/noakhali.png" alt="">
+          </div>
           <div class="  flex-grow ">
             <!-- icon  -->
             <div class="relative">
@@ -99,13 +100,13 @@
                 class="pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 ">
             </div>
 
-            <h3 class="font-bold text-2xl py-8 ">Donate for Flood at Noakhali, Bangladfesh</h3>
+            <h3 class="font-bold text-2xl  py-8 ">Donate for Flood at Noakhali, Bangladfesh</h3>
             <p class="text-colorThree font-semibold text-lg"> The recent floods in Noakhali have caused significant
               damage to homes infrastructure. Your donation will help provide essential supplies and to those affected
               by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the
               relief efforts and making a positive impact on the lives of those in need.</p>
 
-              <div class="mt-12">
+              <div class="mt-">
                 <input type="number" id="donate-ammount-noakhali" placeholder="Write Donation Amount" class="w-11/12 pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 ">
                  <br>
                 <button id="btn-donate-one" class="w-11/12 mt-3 text-xl text-gray-800 font-bold rounded-md bg-colorTwo shadow-md px-7 py-4">Donate Now</button>
@@ -116,9 +117,9 @@
 
 
 <!-- Donation for Feni  -->
-        <div class="bg-white rounded-lg shadow-md space-x-4 flex gap-5">
-          <img src="./assets/feni.png" alt="" class="w-full">
-
+        <div class="bg-white rounded-lg shadow-md space-x-4  gap-5 grid grid-cols md:grid-cols-2 ">
+            <div  class="w-full"><img src="./assets/feni.png" alt="">
+            </div>
           <div class="  flex-grow ">
             <!-- icon  -->
             <div class="relative">
@@ -134,7 +135,7 @@
             <p class="text-colorThree font-semibold text-lg"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need. 
           </p>
 
-              <div class="mt-12">
+              <div class="mt-">
                 <input type="number" id="donate-ammount-feni" placeholder="Write Donation Amount" class="w-11/12 pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 ">
                  <br>
                 <button id="btn-donate-two" class="w-11/12 mt-3 text-xl text-gray-800 font-bold rounded-md bg-colorTwo shadow-md px-7 py-4">Donate Now</button>
@@ -144,9 +145,9 @@
         </div>
 
 <!-- Donation for quota movement  -->
-        <div class="bg-white rounded-lg shadow-md space-x-4 flex gap-5">
-          <img src="./assets/quota-protest.png" alt="" class="w-full">
-       
+        <div class="bg-white rounded-lg shadow-md space-x-4 grid grid-cols md:grid-cols-2  gap-5">
+        <div class="w-full"><img src="./assets/quota-protest.png" alt="" >
+        </div>       
           <div class="  flex-grow ">
             <!-- icon  -->
             <div class="relative">
@@ -162,7 +163,7 @@
             <p class="text-colorThree font-semibold text-lg"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need. 
          </p>
 
-              <div class="mt-12">
+              <div class="mt-">
                 <input type="number" id="donate-ammount-quota" placeholder="Write Donation Amount" class="w-11/12 pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 ">
                  <br>
                 <button id="btn-donate-three" class=" w-11/12 mt-3 text-xl text-gray-800 font-bold rounded-md bg-colorTwo shadow-md px-7 py-4">Donate Now</button>
@@ -181,7 +182,7 @@
     </div>
 
 <!-- Success Modal -->
-<div id="success-modal" class="fixed inset-80   items-center justify-center hidden mx-auto">
+<div id="success-modal" class="fixed inset-32  lg:inset-80   items-center justify-center hidden mx-auto">
   <div class="bg-white rounded-lg shadow-lg p-6  w-80  text-center">
       <div class="flex items-center justify-center flex-col">
         <h2 class="text-2xl font-bold mb-4">CONGRATS!</h2>

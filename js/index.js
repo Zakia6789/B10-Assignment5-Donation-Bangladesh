@@ -101,11 +101,6 @@ document.getElementById('transaction-history').appendChild(transaction);
 }
 
 
-
-
-
-
-
 //Get value by id using function Function for (card 1 Noakhali) 
 function getInputValueById(id) {
     return parseFloat(document.getElementById(id).value) || 0;
@@ -143,8 +138,7 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
 
     // update the UI / DOM  ( fields with the DOM)
     document.getElementById('noakhali-currency').value = newNoakhaliCurrency.toFixed(2);
-    document.getElementById('main-balance').textContent = newMainBalance.toFixed(2) + 'BDT';
-       
+    document.getElementById('main-balance').textContent = newMainBalance.toFixed(2) + 'BDT';   
 });
 
 
