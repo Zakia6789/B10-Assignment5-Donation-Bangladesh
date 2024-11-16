@@ -4,7 +4,7 @@ const historyTab = document.getElementById('history-tab');
 
 // TO switch between Tab 
 function toggleTab(activeTab) {
-    if (activeTab === 'donation'){
+    if (activeTab === 'donation') {
         // set donation tab as active tab 
         donationTab.classList.add(
             'text-colorFour',
@@ -36,7 +36,7 @@ function toggleTab(activeTab) {
         document.getElementById('history-section').classList.add('hidden');
     }
 
-    else if(activeTab ==='history'){
+    else if (activeTab === 'history') {
         historyTab.classList.add(
             'text-colorFour',
             'font-semibold',
@@ -68,37 +68,15 @@ function toggleTab(activeTab) {
     }
 };
 // set addEventListener to toggle 
-donationTab.addEventListener('click', function(){
+donationTab.addEventListener('click', function () {
     toggleTab('donation');
 });
 
-historyTab.addEventListener('click', function(){
+historyTab.addEventListener('click', function () {
     toggleTab('history');
 });
 
 
-
-//////////////////////
-
-function addTransactionHistory(donationName, amount) {
-    const now = new Date();
-    const formattedDate = now.toLocaleDateString();
-    const formattedTime = now.toLocaleTimeString();
-
-    // create a transactionCard 
-    const transaction = document.createElement('div');
-    transaction.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-md', 'border', 'border-gray-200', 'mb-4');
-
-    // set Transaction Details on innerHtml 
-    transaction.innerHTML = `
-    <p class=" font-bold text-lg text-gray-colorThree "> ${amount.toFixed(2)} BDT donated for ${donationName}</p>
-
-    <p class="text-colorThree text-sm "> ${formattedDate}, ${formattedTime} - ${donationName}</p>
-    `;
-
-    // appendChild
-document.getElementById('transaction-history').appendChild(transaction);
-}
 
 
 //Get value by id using function Function for (card 1 Noakhali) 
@@ -138,7 +116,7 @@ document.getElementById('btn-donate-one').addEventListener('click', function () 
 
     // update the UI / DOM  ( fields with the DOM)
     document.getElementById('noakhali-currency').value = newNoakhaliCurrency.toFixed(2);
-    document.getElementById('main-balance').textContent = newMainBalance.toFixed(2) + 'BDT';   
+    document.getElementById('main-balance').textContent = newMainBalance.toFixed(2) + 'BDT';
 });
 
 
@@ -221,22 +199,22 @@ document.getElementById('btn-donate-three').addEventListener('click', function (
 
 // Modal 
 // select the modal and close button (Common Function)
-const successModal =document.getElementById('success-modal');
-const closeModalButton  =document.getElementById('close-modal');
+const successModal = document.getElementById('success-modal');
+const closeModalButton = document.getElementById('close-modal');
 
 // function to show the modal 
-function showSucessModal(){
+function showSucessModal() {
     successModal.classList.remove('hidden');
 }
 
 // function to hide the modal by clicking "close"
-closeModalButton.addEventListener('click', () =>{
+closeModalButton.addEventListener('click', () => {
     successModal.classList.add('hidden');
 });
 
 // common function to handle donation and show the success modal 
-function handleDonation (buttonId){
-    document.getElementById(buttonId).addEventListener('click', () =>{
+function handleDonation(buttonId) {
+    document.getElementById(buttonId).addEventListener('click', () => {
         showSucessModal();
     });
 }
@@ -246,3 +224,28 @@ handleDonation('btn-donate-one');
 handleDonation('btn-donate-two');
 handleDonation('btn-donate-three');
 
+
+
+
+
+
+// history section 
+function addTransactionHistory(donationName, amount) {
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString();
+    const formattedTime = now.toLocaleTimeString();
+
+    // create a transactionCard 
+    const transaction = document.createElement('div');
+    transaction.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-md', 'border', 'border-gray-200', 'mb-4');
+
+    // set Transaction Details on innerHtml 
+    transaction.innerHTML = `
+    <p class=" font-bold text-lg text-gray-colorThree "> ${amount.toFixed(2)} BDT donated for ${donationName}</p>
+
+    <p class="text-colorThree text-sm "> ${formattedDate}, ${formattedTime} - ${donationName}</p>
+    `;
+
+    // appendChild
+    document.getElementById('transaction-history').appendChild(transaction);
+}

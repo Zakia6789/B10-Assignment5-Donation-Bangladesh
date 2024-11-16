@@ -4,7 +4,7 @@ const donationTab = document.getElementById('donation-tab');
 const historyTab = document.getElementById('history-tab');
 
 function toggleTab(activeTab) {
-    if (activeTab === 'donation'){
+    if (activeTab === 'donation') {
         // set donation tab as active tab 
         donationTab.classList.add(
             'text-colorFour',
@@ -36,7 +36,7 @@ function toggleTab(activeTab) {
         document.getElementById('history-section').classList.add('hidden');
     }
 
-    else if(activeTab ==='history'){
+    else if (activeTab === 'history') {
         historyTab.classList.add(
             'text-colorFour',
             'font-semibold',
@@ -68,11 +68,11 @@ function toggleTab(activeTab) {
     }
 };
 // set addEventListener to toggle 
-donationTab.addEventListener('click', function(){
+donationTab.addEventListener('click', function () {
     toggleTab('donation');
 });
 
-historyTab.addEventListener('click', function(){
+historyTab.addEventListener('click', function () {
     toggleTab('history');
 });
 

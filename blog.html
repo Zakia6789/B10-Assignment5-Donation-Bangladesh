@@ -2,138 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  
-    <script src="https://kit.fontawesome.com/55ca501989.js" crossorigin="anonymous"></script>
-  
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              colorOne: 'rgb(249, 247, 243)',
-              colorTwo: '#B4F461',
-              colorThree: 'rgba(17, 17, 17, 0.7)',
-              colorFour : 'rgba(17, 17, 17, 0.7)',
-  
-              clifford: '#da373d',
-            },
-            fontFamily: {
-              Lexend: 'Lexend',
-            },
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://kit.fontawesome.com/55ca501989.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            colorOne: 'rgb(249, 247, 243)',
+            colorTwo: '#B4F461',
+            colorThree: 'rgba(17, 17, 17, 0.7)',
+            colorFour: 'rgba(17, 17, 17, 0.7)',
+
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            Lexend: 'Lexend',
           },
         },
-      }
-    </script>
-  </head>
+      },
+    }
+  </script>
+</head>
 
 <body class="bg-gray-100">
-    <header class="sticky top-0 z-50 shadow-lg bg-opacity-70">
+  <header class="sticky top-0 z-50 shadow-lg bg-opacity-70">
     <nav class="bg-colorOne py-5 flex justify-between items-center px-6  lg:w-11/12 md:w-full mx-auto">
-        <!-- Back to Main Page button -->
-        <div class="flex items-center ">
-            <button><a href="index.html"
-                    class="text-gray-700 font-bold bg-colorTwo text-xl rounded-md px-5 py-2">Home</a></button>
-        </div>
-
-        <!-- center logo  -->
-        <div class=" flex items-center space-x-2">
-            <img src="./assets/logo.png" alt="" class="w-8 h-8">
-            <span class="text-xl font-bold">Donate BAngladesh</span>
-        </div>
-
-
-        <!-- right account balance  -->
-        <div class="flex items-center  space-x-2">
-            <img src="./assets/coin.png" alt="" class="w-8 h-8">
-            <span id="main-balance" class="text-gray-700 font-bold">5500.00 BDT</span>
-        </div>
-    </nav>
-<!-- buttons  -->
-    <div class="flex justify-center space-x-4 mb-6  bg-gray-100 bg-opacity-70  " >
-        <button
-          id="donation-tab"
-          class="rounded-l-md focus:outline-none px-5 py-3  text-xl rounded-md text-colorFour font-semibold bg-colorTwo hover:bg-lime-400"
-        >
-          Donation
-        </button>
-        <button
-          id="history-tab"
-          class="rounded-l-md focus:outline-none text-xl rounded-md px-5 py-3 text-gray-600 bg-gray-100 hover:bg-gray-200  border-2 "
-        >
-          History
-        </button>
+      <!-- Back to Main Page button -->
+      <div class="flex items-center ">
+        <button><a href="index.html"
+            class="text-gray-700 font-bold bg-colorTwo text-xl rounded-md px-5 py-2">Home</a></button>
       </div>
+
+      <!-- center logo  -->
+      <div class=" flex items-center space-x-2">
+        <img src="./assets/logo.png" alt="" class="w-8 h-8">
+        <span class="text-xl font-bold">Donate BAngladesh</span>
+      </div>
+
+
+      <!-- right account balance  -->
+      <div class="flex items-center  space-x-2">
+        <img src="./assets/coin.png" alt="" class="w-8 h-8">
+        <span id="main-balance" class="text-gray-700 font-bold">5500.00 BDT</span>
+      </div>
+    </nav>
+    <!-- buttons  -->
+    <div class="flex justify-center space-x-4 mb-6  bg-gray-100 bg-opacity-70  ">
+      <button id="donation-tab"
+        class="rounded-l-md focus:outline-none px-5 py-3  text-xl rounded-md text-colorFour font-semibold bg-colorTwo hover:bg-lime-400">
+        Donation
+      </button>
+      <button id="history-tab"
+        class="rounded-l-md focus:outline-none text-xl rounded-md px-5 py-3 text-gray-600 bg-gray-100 hover:bg-gray-200  border-2 ">
+        History
+      </button>
+    </div>
   </header>
 
 
-    <main class="w-11/12 mx-auto py-10">
-        <!-- accordion  -->
- <section class="space-y-8">
-           <!-- accordion 1  -->
-  <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
-    <input type="radio" name="my-accordion-3" checked="checked" />
-    <div class="collapse-title text-xl font-bold">1. What is the Document Object Model (DOM)?</div>
-    <div class="collapse-content">
-      <p class="text-gray-700 mt-2"> The Document Object Model (DOM) is a programming interface for web documents. It represents the page
-        so that
-        programs can change the document structure, style, and content. The DOM represents the document as a
-        tree of
-        nodes, where each node represents part of the document, such as elements, attributes, and text.</p>
-    </div>
-  </div>
-<!-- accordion 2  -->
-  <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
-    <input type="radio" name="my-accordion-3" checked="checked" />
-    <div class="collapse-title text-xl font-bold">2. How do you select an element from the DOM?</div>
-    <div class="collapse-content">
-      <p class="text-gray-700 mt-2">   Elements can be selected from the DOM using JavaScript methods such as
-        <code>document.getElementById()</code>,
-        <code>document.querySelector()</code>, and <code>document.querySelectorAll()</code>. These methods
-        allow you
-        to target specific elements by their IDs, classes, tags, or other attributes to interact with them.</p>
-    </div>
-  </div>
-<!-- accordion 3  -->
-  <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
-    <input type="radio" name="my-accordion-3" checked="checked" />
-    <div class="collapse-title text-xl font-bold">3. What is event delegation in the context of the DOM, and why is it
-        useful?</div>
-    <div class="collapse-content">
-      <p class="text-gray-700 mt-2"> Event delegation is a technique where a single event listener is added to a parent element to manage
-        events
-        for multiple child elements. Instead of adding individual event listeners to each child element, the
-        event
-        is "delegated" to the parent, improving performance and simplifying code. This is especially useful
-        for
-        dynamic content where new elements may be added or removed.</p>
-    </div>
-  </div>
-<!-- accordion 4  -->
-  <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
-    <input type="radio" name="my-accordion-3" checked="checked" />
-    <div class="collapse-title text-xl font-bold">4. How do you manipulate an element's attributes and styles using the DOM?</div>
-    <div class="collapse-content">
-      <p class="text-gray-700 mt-2">    I can manipulate an element's attributes and styles using JavaScript. The
-        <code>setAttribute()</code> and
-        <code>getAttribute()</code> methods allow you to set or get attributes on elements. For styles, I
-        can use
-        the <code>style</code> property, like <code>element.style.color = "red"</code>, to modify CSS
-        properties
-        directly.</p>
-    </div>
-  </div>
- </section>
-    </main>
+  <main class="w-11/12 mx-auto py-10">
+    <!-- accordion  -->
+    <section class="space-y-8">
+      <!-- accordion 1  -->
+      <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-bold">1. What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p class="text-gray-700 mt-2"> The Document Object Model (DOM) is a programming interface for web documents.
+            It represents the page
+            so that
+            programs can change the document structure, style, and content. The DOM represents the document as a
+            tree of
+            nodes, where each node represents part of the document, such as elements, attributes, and text.</p>
+        </div>
+      </div>
+      <!-- accordion 2  -->
+      <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-bold">2. How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-gray-700 mt-2"> Elements can be selected from the DOM using JavaScript methods such as
+            <code>document.getElementById()</code>,
+            <code>document.querySelector()</code>, and <code>document.querySelectorAll()</code>. These methods
+            allow you
+            to target specific elements by their IDs, classes, tags, or other attributes to interact with them.
+          </p>
+        </div>
+      </div>
+      <!-- accordion 3  -->
+      <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-bold">3. What is event delegation in the context of the DOM, and why is
+          it
+          useful?</div>
+        <div class="collapse-content">
+          <p class="text-gray-700 mt-2"> Event delegation is a technique where a single event listener is added to a
+            parent element to manage
+            events
+            for multiple child elements. Instead of adding individual event listeners to each child element, the
+            event
+            is "delegated" to the parent, improving performance and simplifying code. This is especially useful
+            for
+            dynamic content where new elements may be added or removed.</p>
+        </div>
+      </div>
+      <!-- accordion 4  -->
+      <div class="collapse collapse-plus bg-base-200 p-6 bg-white shadow-md rounded-lg">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-bold">4. How do you manipulate an element's attributes and styles using
+          the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-gray-700 mt-2"> I can manipulate an element's attributes and styles using JavaScript. The
+            <code>setAttribute()</code> and
+            <code>getAttribute()</code> methods allow I to set or get attributes on elements. For styles, I
+            can use
+            the <code>style</code> property, like <code>element.style.color = "red"</code>, to modify CSS
+            properties
+            directly.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="./js/blog.js"></script>
+  <script src="./js/blog.js"></script>
 </body>
 
 </html>
